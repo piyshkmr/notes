@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button,
+a,
+i {
+  cursor: pointer;
+  color: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
+:root {
+  --primary: #8881d8;
+  --primaryDark: #6a61bf;
+  --bg: #141414;
+  --card-bg: #1a1a1a;
+  --heading: #e6e6e6;
+  --paragraph: #cecece;
+  --dull: #8d8d8d;
+}
+
+html {
+  font-size: 62.4%;
+}
+
+#main {
+  padding: 1.4rem;
+  padding-top: 7rem;
+  background-color: var(--bg);
+  grid-gap: 1.4rem;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background-image: linear-gradient(var(--bg) 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
 }
 
-.App-link {
-  color: #61dafb;
+.create-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  background-color: var(--primaryDark);
+  color: var(--primaryText);
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  transition: all 500ms ease-in-out;
+  animation: bounce 1s infinite alternate-reverse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.create-btn:hover {
+  animation: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(0px);
   }
 }

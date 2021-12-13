@@ -1,0 +1,39 @@
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 5px;
+  /* border: 0.2px solid rgb(240, 240, 240); */
+  height: fit-content;
+  transition: all 300ms ease-in-out;
+}
+
+.card-date {
+  font-size: 1.2rem;
+  color: var(--dull);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: var(--heading);
+}
+
+.card-content {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--paragraph);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-action {
+  font-size: 1.4rem;
+}
+
+.card-action i {
+  margin-right: 1rem;
+}

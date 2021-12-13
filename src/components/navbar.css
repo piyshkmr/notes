@@ -1,0 +1,23 @@
+nav {
+  padding: 1.4rem;
+  background-color: var(--primary);
+  color: var(--primaryText);
+  position: fixed;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #f9f9f9;
+}
+
+nav i {
+  margin-left: 5px;
+  transform: translateY(-5px);
+  font-size: 1.7rem;
+}
+
+.logo {
+  display: flex;
+}
+
+#feather {
+  animation: bounce 1s infinite alternate-reverse;
+}
